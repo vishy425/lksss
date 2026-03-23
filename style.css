@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+/* Header & Hero */
+.header {
+    height: 735px;
+    background-image: url(img/index_bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nav {
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+}
+
+.header__logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__link {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    margin-top: 64px;
+    max-width: 792px;
+}
+
+.hero__title {
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.hero__text {
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.hero__link {
+    font-size: 16px;
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+/* Products */
+.products {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.products__title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.products__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px 32px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.product__name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.product__desc {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.product__price {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+}
+
+.footer__text {
+    font-size: 16px;
+    color: #000;
+}
